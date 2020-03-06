@@ -1,0 +1,152 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600i,700,900&display=swap');
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+   /* font-family: "Titillium Web", sans-serif;*/
+}
+
+#main-app-container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-size: 0;
+}
+
+.page-container{
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/img/venus_bg.jpg");
+    background-size: 100% 100%;
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+#page-0-content-wrapper{
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -150px;
+}
+
+#company-logo-container{
+    width: 100px;
+    height: 100px;
+    background-image: url("../media/img/hov_ig_logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: block;
+    margin: 5% auto;
+}
+
+#company-title-container{
+    width: 300px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+#company-slogan-container{
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#next-page-container{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.service-select-button-container{
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: black;
+    border: 2px white solid;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.service-select-button-container:hover{
+    background-color: white;
+    color: black;
+}
+
+#services-button-container{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -150px;
+}
+
+#subscribe-button-container{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    margin-left: -150px;
+}
+
+#page-0-container{
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+}
+
+#page-1-container{
+    background-repeat: repeat-y;
+    background-position: top;
+}
+
+.service-option-container{
+    width: 120px;
+    height: 120px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#annes-flower-shop-button-container{
+    background-color: blue;
+}
+
+#foodid-button-container{
+    background-color: white;
+}
+
+#talk-show-host-button-container{
+    background-color: red;
+}
+
+#page-1-content-wrapper{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: -60px;
+    transition: opacity 0.5s;
+}
