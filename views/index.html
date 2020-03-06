@@ -9,7 +9,13 @@
             let servicesVisible = false;
             
             document.getElementById("next-page-container").addEventListener("click", function(){
-                console.log("scroll down to the second page");
+                let moveToPosition = document.getElementById("page-0-container").scrollHeight;
+                console.log("scroll down to the second page", moveToPosition);
+                window.scrollTo({
+                    top: moveToPosition,
+                    left: 0,
+                    behavior: 'smooth'
+                });
             });
             
             document.getElementById("subscribe-button-container").addEventListener("click", function(){
@@ -32,7 +38,7 @@
                 <div id="company-title-container">House of Venus</div>
                 <div id="company-slogan-container">The world is your desktop</div>
             </div>
-            <div id="next-page-container">next</div>
+            <div id="next-page-container"></div>
         </div>
         <div id="page-1-container" class="page-container">
             <div id="services-button-container" class="service-select-button-container">

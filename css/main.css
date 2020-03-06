@@ -1,6 +1,4 @@
-/*
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600i,700,900&display=swap');
-*/
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 
 * {
     margin: 0;
@@ -10,8 +8,8 @@
 body, html{
     width: 100%;
     height: 100%;
-    font-family: monospace;
-   /* font-family: "Titillium Web", sans-serif;*/
+    /*font-family: monospace;*/
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 #main-app-container{
@@ -25,8 +23,7 @@ body, html{
 .page-container{
     width: 100%;
     height: 100%;
-    background-image: url("../media/img/venus_bg.jpg");
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
     display: inline-block;
     color: white;
     position: relative;
@@ -35,7 +32,7 @@ body, html{
 #page-0-content-wrapper{
     width: 300px;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     margin-left: -150px;
 }
@@ -63,11 +60,12 @@ body, html{
     width: 300px;
     text-align: center;
     font-size: 16px;
+    margin-top: 2%;
 }
 
 #next-page-container{
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     left: 50%;
     width: 50px;
     height: 50px;
@@ -75,6 +73,15 @@ body, html{
     cursor: pointer;
     font-size: 16px;
     font-weight: 900;
+    background-image: url("../media/img/down-arrow.png");
+    background-size: 100% 100%;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+    animation: blinkButton 2s linear 0s infinite normal;/**/
+}
+
+@keyframes blinkButton {
+  50% {opacity: 0;}
 }
 
 .service-select-button-container{
@@ -111,14 +118,28 @@ body, html{
 }
 
 #page-0-container{
+    background-image: url("../media/img/venus_bg.jpg");
     background-repeat: repeat-x;
-    background-position: 0 100%;
+    background-position: 0% -35%;
+    animation: mymove 60s linear 0s infinite normal;/**/
+}
+
+@keyframes mymove {
+  100% {background-position: 400% -35%;}
 }
 
 #page-1-container{
-    background-repeat: repeat-y;
-    background-position: top;
+    background-color: black;
+    background-image: url("../media/img/rotated_venus_bg.jpg");
+    background-repeat: repeat-x;
+    background-position: 0% 125%;
+    animation: mymoveBottom 60s linear 0s infinite normal;/**/
 }
+
+@keyframes mymoveBottom {
+  100% {background-position: 400% 125%;}
+}
+
 
 .service-option-container{
     width: 120px;
