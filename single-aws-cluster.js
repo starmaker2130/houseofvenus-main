@@ -32,9 +32,6 @@ else {
     // required modules
     var bodyParser = require('body-parser');
     var express = require('express');
-    var formidable = require('formidable');
-    var util = require('util');
-    var fs = require('fs');
     var WhichBrowser = require('which-browser');
     // main application instance
 
@@ -54,7 +51,6 @@ else {
             './media/img',  /* 6 */
             './media/sound',   /* 7 */
             './media/vid',    /* 8 */
-            './media/model',    /* 9 */
         ]
     };
 
@@ -92,17 +88,6 @@ else {
 
 
     app.get('/subscribe', function(req, res){
-        var result = new WhichBrowser(req.headers);
-        console.log(result.toString());
-        if(result.isType('desktop')){
-            console.log('This is a desktop computer.');
-            deviceType = 'desktop';
-        }
-        else{
-            console.log('This is a mobile device.');
-            deviceType = 'mobile';
-        }
-
         res.render('subscribe.html',{root: dir[0]});
     });
 
@@ -146,11 +131,6 @@ else {
         res.sendFile(video_id, {root: dir[8]});
     });
 
-    app.get('/media/model/:model_id', function(req, res){
-        var model_id = req.params.model_id;
-        res.sendFile(model_id, {root: dir[9]});
-    });
-
     app.get('/uploads/:upload_id', function(req, res){
         var upload_id = req.params.upload_id;
         res.sendFile(upload_id, {root: dir[10]});
@@ -158,7 +138,7 @@ else {
 
     var io = require('socket.io').listen(app.listen(config.PORT, function(){
         console.log('connecting \n . \n .. \n ... \n .... \n ..... \n ------------------------------------------');
-        console.log('    HOUSE OF VENUS, BENEFIT CORPORATION \n COMPANY LANDING PAGE v 0.0.1 ');
+        console.log('    HOUSE OF VENUS, BENEFIT CORPORATION \n COMPANY LANDING PAGE v 0.4.2 ');
         console.log('------------------------------------------');
         console.log(`[0] listening on port ${config.PORT}`);
         console.log('------------------------------------------');

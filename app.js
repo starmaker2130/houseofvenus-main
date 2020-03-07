@@ -6,9 +6,6 @@
 // required modules
 var bodyParser = require('body-parser');
 var express = require('express');
-var formidable = require('formidable');
-var util = require('util');
-var fs = require('fs');
 var WhichBrowser = require('which-browser');
 // main application instance
 
