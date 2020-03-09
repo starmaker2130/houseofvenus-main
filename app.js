@@ -61,6 +61,33 @@ app.get('/', function(req, res){
     res.render('index.html',{root: dir[0]});
 });
 
+app.get('/hillary', function(req, res){
+    var result = new WhichBrowser(req.headers);
+    console.log(result.toString());
+
+    res.render('hillary.html',{root: dir[0]});
+});
+
+app.get('/james', function(req, res){
+    var result = new WhichBrowser(req.headers);
+    console.log(result.toString());
+
+    res.render('james.html',{root: dir[0]});
+});
+
+app.get('/louis', function(req, res){
+    var result = new WhichBrowser(req.headers);
+    console.log(result.toString());
+
+    res.render('louis.html',{root: dir[0]});
+});
+
+app.get('/guedalia', function(req, res){
+    var result = new WhichBrowser(req.headers);
+    console.log(result.toString());
+
+    res.render('guedalia.html',{root: dir[0]});
+});
 
 app.get('/subscribe', function(req, res){
     var result = new WhichBrowser(req.headers);

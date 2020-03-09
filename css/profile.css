@@ -103,14 +103,14 @@ body, html{
     color: black;
 }
 
-#services-button-container{
+#test-button-container{
     position: absolute;
     top: 15%;
     left: 50%;
     margin-left: -150px;
 }
 
-#subscribe-button-container{
+#create-button-container{
     position: absolute;
     bottom: 15%;
     left: 50%;
@@ -190,8 +190,7 @@ body, html{
     transition: opacity 0.5s;
 }
 
-
-/* FOR IPHONE 11 */
+/* FOR IPHONE 11 
 @media only screen 
     and (device-width: 414px) 
     and (device-height: 896px) 
@@ -200,7 +199,7 @@ body, html{
             background-image: url("../media/img/venus_bg.jpg");
             background-repeat: repeat-x;
             background-position: 0% -65%;
-            animation: mymovePhones 60s linear 0s infinite normal;/**/
+            animation: mymove 60s linear 0s infinite normal;/**/
         }
 
         #next-page-container{
@@ -300,7 +299,7 @@ body, html{
         }
 }
 
-/* FOR IPHONE 11 PRO */
+/* FOR IPHONE 11 PRO 
 @media only screen 
     and (device-width: 375px) 
     and (device-height: 812px) 
@@ -394,14 +393,14 @@ body, html{
             height: 240px;
         }
         
-        #services-button-container{
+        #test-button-container{
             position: absolute;
             top: 15%;
             left: 50%;
             margin-left: -200px;
         }
 
-        #subscribe-button-container{
+        #create-button-container{
             position: absolute;
             bottom: 15%;
             left: 50%;
@@ -423,7 +422,7 @@ body, html{
         }
 }
 
-/* FOR IPHONE 11 PRO MAX */
+/* FOR IPHONE 11 PRO MAX 
 @media only screen 
     and (device-width: 414px) 
     and (device-height: 896px) 
@@ -534,4 +533,4 @@ body, html{
             cursor: pointer;
             transition: background-color 0.5s, color 0.5s;
         }
-}
+}*/*/*/
