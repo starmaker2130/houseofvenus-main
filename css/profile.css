@@ -158,6 +158,10 @@ body, html{
     transition: border 0.5s, width 0.5s, height 0.5s;
 }
 
+/*
+2:40 - 2:44
+2:47 - 2:50 */
+
 .service-option-container:hover{
     border: 5px white solid;
     width: 110px;

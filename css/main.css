@@ -124,10 +124,6 @@ body, html{
     animation: mymove 60s linear 0s infinite normal;/**/
 }
 
-@keyframes mymove {
-  100% {background-position: 400% -35%;}
-}
-
 #page-1-container{
     background-color: black;
     background-image: url("../media/img/rotated_venus_bg.jpg");
@@ -136,12 +132,20 @@ body, html{
     animation: mymoveBottom 60s linear 0s infinite normal;/**/
 }
 
+@keyframes mymove {
+  100% {background-position: 400% -35%;}
+}
+
 @keyframes mymoveBottom {
   100% {background-position: 400% 125%;}
 }
 
 @keyframes mymovePhones {
-  100% {background-position: 400% -65%;}
+  100% {background-position: 400% 150%;}
+}
+
+@keyframes mymoveBottomPhones {
+  100% {background-position: 400% -100%;}
 }
 
 .service-option-container{
@@ -199,9 +203,18 @@ body, html{
         #page-0-container{
             background-image: url("../media/img/venus_bg.jpg");
             background-repeat: repeat-x;
-            background-position: 0% -65%;
+            background-position: 0% 150%;
             animation: mymovePhones 60s linear 0s infinite normal;/**/
         }
+        
+        #page-1-container{
+            background-color: black;
+            background-image: url("../media/img/rotated_venus_bg.jpg");
+            background-repeat: repeat-x;
+            background-position: 0% -100%;
+            animation: mymoveBottomPhones 60s linear 0s infinite normal;/**/
+        }
+
 
         #next-page-container{
             position: absolute;
@@ -308,8 +321,16 @@ body, html{
         #page-0-container{
             background-image: url("../media/img/venus_bg.jpg");
             background-repeat: repeat-x;
-            background-position: 0% -65%;
+            background-position: 0% 150%;
             animation: mymovePhones 60s linear 0s infinite normal;/**/
+        }
+        
+        #page-1-container{
+            background-color: black;
+            background-image: url("../media/img/rotated_venus_bg.jpg");
+            background-repeat: repeat-x;
+            background-position: 0% -100%;
+            animation: mymoveBottomPhones 60s linear 0s infinite normal;/**/
         }
         
         #next-page-container{
@@ -431,12 +452,16 @@ body, html{
         #page-0-container{
             background-image: url("../media/img/venus_bg.jpg");
             background-repeat: repeat-x;
-            background-position: 0% -65%;
+            background-position: 0% 150%;
             animation: mymovePhones 60s linear 0s infinite normal;/**/
         }
-
-        @keyframes mymove {
-          100% {background-position: 400% -65%;}
+        
+        #page-1-container{
+            background-color: black;
+            background-image: url("../media/img/rotated_venus_bg.jpg");
+            background-repeat: repeat-x;
+            background-position: 0% -100%;
+            animation: mymoveBottomPhones 60s linear 0s infinite normal;/**/
         }
         
         #next-page-container{

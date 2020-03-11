@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House of Venus | City as a Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/profile.css" type="text/css" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            let testVisible = false;
+            
+            document.getElementById("next-page-container").addEventListener("click", function(){
+                let moveToPosition = document.getElementById("page-0-container").scrollHeight;
+                console.log("scroll down to the second page", moveToPosition);
+                window.scrollTo({
+                    top: moveToPosition,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            document.getElementById("create-button-container").addEventListener("click", function(){
+                window.location.replace("hillary-viewer");
+            });
+            
+            document.getElementById("test-button-container").addEventListener("click", function(){
+                if(!testVisible){
+                    document.getElementById("page-1-content-wrapper").style.opacity = 1.0;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="main-app-container">
+        <div id="page-0-container" class="page-container">
+            <div id="page-0-content-wrapper">
+                <div id="company-logo-container"></div>
+                <div id="company-title-container">Hillary</div>
+                <div id="company-slogan-container">The world is your desktop</div>
+            </div>
+            <div id="next-page-container"></div>
+        </div>
+        <div id="page-1-container" class="page-container">
+            <div id="test-button-container" class="service-select-button-container">
+                test
+            </div>
+            <div id="page-1-content-wrapper">
+                <div id="annes-flower-shop-button-container" class="service-option-container"></div>
+                <div id="foodid-button-container" class="service-option-container"></div>
+                <div id="talk-show-host-button-container" class="service-option-container"></div>
+            </div>
+            <div id="create-button-container" class="service-select-button-container">
+                create
+            </div>
+        </div>
+    </div>
+</body>
+</html>
